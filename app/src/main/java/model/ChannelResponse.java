@@ -1,0 +1,52 @@
+package model;
+
+/**
+ * Created by Bertho on 6/14/2016.
+ */
+
+import com.google.gson.annotations.SerializedName;
+import java.util.List;
+
+public class ChannelResponse {
+
+    @SerializedName("page")
+    private int page;
+    @SerializedName("results")
+    private List<Channel> results;
+    @SerializedName("total_results")
+    private int totalResults;
+    @SerializedName("total_pages")
+    private int totalPages;
+
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public List<Channel> getResults() {
+        return results;
+    }
+
+    public void setResults(List<Channel> results) {
+        this.results = results;
+    }
+
+    public int getTotalResults() {
+        return totalResults;
+    }
+
+    public void setTotalResults(int totalResults) {
+        this.totalResults = totalResults;
+    }
+
+    public int getTotalPages() {
+        return totalPages;
+    }
+
+    public void setTotalPages(int totalPages) {
+        this.totalPages = totalPages;
+    }
+}
